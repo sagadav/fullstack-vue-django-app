@@ -25,6 +25,11 @@ AUTH_USER_MODEL = 'user.User'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
+
+ALLOWED_HOSTS = [
+    "sagadav.pythonanywhere.com"
+]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
