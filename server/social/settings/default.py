@@ -22,14 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 AUTH_USER_MODEL = 'user.User'
 # CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
-
-ALLOWED_HOSTS = [
-    "sagadav.pythonanywhere.com"
-]
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -37,8 +29,6 @@ ALLOWED_HOSTS = [
 SECRET_KEY = 'django-insecure-qnh_6)-!!gq@c&e+$%ne*m36l%$+*+86r)v5b^_-o7-(tx4ud+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -90,19 +80,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'social.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'OPTIONS': {
-            'read_default_file': '../db.cnf'
-        }
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
