@@ -13,7 +13,7 @@ const pagesLength = computed(() => Math.ceil(props.count / props.limit) + 1);
 </script>
 
 <template>
-  <div class="pagination">
+  <div v-if="pagesLength > 1" class="pagination">
     <button :disabled="page === 1" @click="$emit('click:prev')">prev</button>
     <div
       v-for="num in range(1, pagesLength)"
