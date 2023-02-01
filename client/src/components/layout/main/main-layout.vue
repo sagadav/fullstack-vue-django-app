@@ -2,6 +2,8 @@
 import { useAuthStore } from "@/stores/auth";
 
 const authStore = useAuthStore();
+
+const nowYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -25,7 +27,7 @@ const authStore = useAuthStore();
     <main class="container">
       <RouterView />
     </main>
-    <footer class="footer">footer content</footer>
+    <footer class="footer">© «Artur inc», {{ nowYear }}</footer>
   </div>
 </template>
 
