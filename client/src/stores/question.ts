@@ -88,6 +88,3 @@ export const useQuestionStore = defineStore("question", {
     },
   },
 });
-
-const a = useQuestionStore();
-a;
